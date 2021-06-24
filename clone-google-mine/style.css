@@ -8,18 +8,42 @@ html {
   font-size: 62.5%;
 }
 
-header {
-  height: 15vh;
+.header {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-main {
-  height: 70vh;
+
+.nav {
+  display: flex;
+  margin: 1rem 1rem;
+  align-items: center;
 }
+
+.nav li {
+  display: inline;
+  margin: 0 0.6rem;
+}
+
+.nav li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #6e7076;
+}
+
+.nav li figure img {
+  height: 2rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-color: gray;
+  height: 84vh;
 }
 
 .container-search {
@@ -28,35 +52,59 @@ main {
 }
 
 .container-search div {
-  border-style: solid;
-  border-color: #5a5a5a;
-  border-radius: 5rem 5rem 5rem 5rem;
-  border-width: 0.15rem;
-  width: 75vw;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  height: 3.25rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 75vw;
+  height: 6vh;
+
+  border-style: solid;
+  border-color: #e5e5e9;
+  border-width: 0.01rem;
+  border-radius: 5rem 5rem 5rem 5rem;
+  border-width: 0.15rem;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .container-search div picture img {
-  height: 2.2rem;
+  height: 1.8rem;
 }
 
 .container-search div input {
   border: none;
-  width: 100%;
+  margin: 0 1rem;
+  width: 90%;
   height: 100%;
 }
 
+.search-input:focus {
+  outline: none;
+}
+
+.container-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .container-buttons button {
+  font-size: 1.1rem;
+  border: none;
+  color: #737378;
   margin: 0 0.7rem;
   background-color: #ebebef;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 18vw;
+  height: 6vh;
 }
 
 footer {
-  height: 15vh;
+  height: 8vh;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: #e4e4e6;
+  background-color: #ebebef;
 }
