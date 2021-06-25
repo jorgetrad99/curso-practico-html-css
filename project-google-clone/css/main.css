@@ -83,8 +83,13 @@ main .main-input-container {
   border-radius: 100px;
   border: 1px solid #dfe1e5;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+main .main-input-container:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500;
 }
 
 main .main-input input {
@@ -92,4 +97,28 @@ main .main-input input {
   height: 40px;
   border: none;
   outline: none;
+}
+
+main .main-input .search-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
+
+main .main-input .micro-icon {
+  background-image: url("data:image/png;base64,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");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+main .main-buttons {
+  display: flex;
+  justify-content: center;
 }
